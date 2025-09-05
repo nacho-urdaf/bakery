@@ -4,6 +4,18 @@ html,body{
     width: 1920px; 
     font-family: Arial, Helvetica, sans-serif;
 }
+ h1 {
+    margin: 0;
+    font-size: 5rem;
+}
+
+h2{
+    font-size: 2.5rem;
+    color: #000000cc;
+}
+p{
+    line-height: 2;
+}
 
 nav{
     display: flex;
@@ -11,6 +23,9 @@ nav{
     padding: .5rem 5rem .5rem 5rem;    
     color: #292929c2;
     background-color: rgb(255, 255, 255);
+    z-index: 1;
+    width: 1800px;
+    height: 50px;
 }
 nav .logo{
     cursor: pointer;
@@ -19,9 +34,15 @@ nav .logo{
 nav .menu{
     display: flex;
 }
-nav .menu p{
-  margin: 1rem;
-  cursor: pointer;
+nav .menu a{
+    margin-left: 3rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    color: #292929c2;
+}
+nav .menu a:hover {
+    color: rgb(21, 15, 44);
 }
 
  nav button{
@@ -66,10 +87,7 @@ nav .menu p{
 }
 
 
-.portafolio h1 {
-    margin: 0;
-    font-size: 5rem;
-}
+
 .portafolio p{
     margin: 0;
     width: 35%;
@@ -103,11 +121,7 @@ nav .menu p{
     height: 100%;
 }
 
-.aboutUs h2{
-    font-size: 2.5rem;
-    margin: 0;
-    color: #000000cc;
-}
+
 .aboutUs div p{
     font-size: 1.1rem;
     width: 60%;
@@ -125,11 +139,7 @@ nav .menu p{
     margin-top: 100px;
 }
 
-.testimonials h2{
-    padding: 70px;
-    font-size: 2.5rem;
-    color: #000000cc;
-}
+
 
 .testimonials .card{
     width: 100%;
@@ -177,11 +187,7 @@ nav .menu p{
     align-items: center;
     justify-content: space-evenly;
 }
-.cakes h2{
 
-    font-size: 2.5rem;
-    color: #000000cc; 
-}
 .cakes .cakeImages{
     width: 95%;
     height: 100%;
@@ -196,4 +202,98 @@ nav .menu p{
     width: 20%;
     height: 35%;
     border-radius: 9px;
+}
+
+.gallery{
+    padding-top: 100px;
+    width: 100%;
+    height: 900px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: rgba(44, 44, 44, 0.678);
+}
+.gallery h1{
+    font-size: 3rem;
+        color: #000000cc;
+}
+.gallery p{
+    width: 50%;
+    text-align: center;
+
+}
+.gallery hr{
+    width: 85%;
+    background-color: rgba(85, 85, 85, 0.527);
+    height: 1px;
+    border: none;
+}
+
+.gallery .typesOfCake{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery a{
+    margin-left: 50px;
+    text-decoration: none;
+    color: rgba(44, 44, 44, 0.678);
+    position: relative;
+}
+.gallery a:hover{
+    color: rgb(21, 15, 44);
+}
+.gallery a::after {
+  content: ''; /* Obligatorio para crear el pseudo-elemento */
+  position: absolute; /* Permite posicionar la línea libremente */
+  bottom: -35px; /* Coloca la línea 5px debajo del párrafo */
+  left: 0;
+  width: 0; /* Ancho inicial de 0 para que no sea visible */
+  height: 2px; /* Grosor de la línea */
+  background-color:rgb(21, 15, 44); /* Color de la línea */
+  transition: width 0.2s ease; /* Transición suave para el ancho */
+}
+.gallery a:hover::after {
+  width: 100%; /* La línea se extiende para cubrir el 100% del ancho del párrafo */
+}
+
+.gallery .weddingCakes{
+    width: 100%;
+    display: flex;
+}
+.gallery .weddingCakes div{
+    margin: 0;
+    width: 90%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+.gallery .weddingCakes img{
+    width: 60%;
+    height: 65%;
+    border-radius: 9px;
+    text-align: center;
+}
+.gallery .weddingCakes h3{
+    margin: 0;
+    margin-top: 15px;
+    color: #000000cc;
+}
+
+.gallery .weddingCakes p{
+    width: 70%;
+    margin: 0;
+    color: rgba(85, 85, 85, 0.527);
+      line-height: 1;
+      margin: 10px 0 10px 0;
+}
+.gallery .weddingCakes .Detalles{
+    color: #000000cc;
 }
