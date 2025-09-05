@@ -1,0 +1,199 @@
+html,body{
+    margin: 0;
+    font-size: 16px;
+    width: 1920px; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 5rem .5rem 5rem;    
+    color: #292929c2;
+    background-color: rgb(255, 255, 255);
+}
+nav .logo{
+    cursor: pointer;
+}
+
+nav .menu{
+    display: flex;
+}
+nav .menu p{
+  margin: 1rem;
+  cursor: pointer;
+}
+
+ nav button{
+    border-radius: 1rem;
+     background-color: rgb(21, 15, 44);
+    color: white;
+    border: none;
+    width: 10rem;
+    height: 3.5em;
+    cursor: pointer;
+}
+
+.portafolio{
+    height: 780px;
+    background-image: url("natallia-nagorniak-tA3sJ4u09eU-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    position: relative;
+    padding: 50px;
+    background-position: center;
+}
+.portafolio::before{
+    position: absolute;
+    background-color: rgba(94, 94, 94, 0.219);
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+}
+
+#portafolio{
+    display: flex;
+    justify-content:flex-end;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+
+}
+
+
+.portafolio h1 {
+    margin: 0;
+    font-size: 5rem;
+}
+.portafolio p{
+    margin: 0;
+    width: 35%;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 2rem 0 2rem 0;
+}
+.portafolio button{
+    border-radius: 1rem;
+    background-color: rgb(21, 15, 44);
+    color: white;
+    border: none;
+    width: 10rem;
+    height: 3.5em;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 10%;
+}
+
+.aboutUs{
+    background-color: rgb(253, 253, 253);
+    width: 100%;
+    height: 400px;
+}
+.aboutUs div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.aboutUs h2{
+    font-size: 2.5rem;
+    margin: 0;
+    color: #000000cc;
+}
+.aboutUs div p{
+    font-size: 1.1rem;
+    width: 60%;
+    text-align: center;
+    margin-top: 50px;
+    color: rgba(44, 44, 44, 0.678);
+    line-height: 2;
+}
+
+.testimonials{
+    background-color: rgb(253, 250, 243);
+    width: 100%;
+    height: 700px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.testimonials h2{
+    padding: 70px;
+    font-size: 2.5rem;
+    color: #000000cc;
+}
+
+.testimonials .card{
+    width: 100%;
+    height:350px;
+    display: flex;
+    align-items: end;
+    justify-content: space-evenly;
+}
+
+.testimonials .card .cards{
+    
+    width: 20%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-color: rgba(184, 184, 184, 0.301);
+    border-width:1px 3px 6px 3px;
+    border-style: solid;
+}
+
+.testimonials .card .cards img{
+    border-radius: 50%;
+    width: 20%;
+    height:20%
+}
+
+.testimonials .card .cards p{
+    background-color: rgb(255, 255, 255);
+    width: 70%;
+    border-radius: 9px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.cakes{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.cakes h2{
+
+    font-size: 2.5rem;
+    color: #000000cc; 
+}
+.cakes .cakeImages{
+    width: 95%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.cakes .cakeImages  img{
+    margin: 10px;
+    width: 20%;
+    height: 35%;
+    border-radius: 9px;
+}
