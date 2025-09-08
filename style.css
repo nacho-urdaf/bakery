@@ -1,9 +1,11 @@
 html,body{
     margin: 0;
+    box-sizing:border-box;
     font-size: 16px;
-    width: 1920px; 
+    width: 100%auto; 
     font-family: Arial, Helvetica, sans-serif;
 }
+
  h1 {
     margin: 0;
     font-size: 5rem;
@@ -19,20 +21,29 @@ p{
 
 nav{
     display: flex;
-    justify-content: space-between;
-    padding: .5rem 5rem .5rem 5rem;    
+    justify-content: space-around;
     color: #292929c2;
+    padding: 10px;
     background-color: rgb(255, 255, 255);
     z-index: 1;
-    width: 1800px;
     height: 50px;
+    position: fixed;
+    width: 100%;
+}
+
+nav .logo a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #292929c2;  
 }
 nav .logo{
     cursor: pointer;
+    margin-top: 1rem;
 }
 
 nav .menu{
     display: flex;
+    margin: 0 450px 0 450px;
 }
 nav .menu a{
     margin-left: 3rem;
@@ -53,6 +64,9 @@ nav .menu a:hover {
     width: 10rem;
     height: 3.5em;
     cursor: pointer;
+}
+nav button:hover{
+    color: #646464c2;
 }
 
 .portafolio{
@@ -105,6 +119,7 @@ nav .menu a:hover {
     cursor: pointer;
     font-size: 1rem;
     width: 10%;
+    cursor: pointer;
 }
 
 .aboutUs{
@@ -296,4 +311,202 @@ nav .menu a:hover {
 }
 .gallery .weddingCakes .Detalles{
     color: #000000cc;
+}
+
+.form{
+    height: 1350px;
+    background-color: rgb(253, 250, 243);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.form h3{
+    margin-top: 50px;
+    font-size: 2rem;
+}
+
+
+.form .lorem{
+    width: 40%;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.form p{
+    margin: 0;
+    width: 100%;
+}
+
+.form .input {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #3f3f3f;
+}
+.form .input input{
+    margin: 0;
+    width: 100%;
+    height: 40px;
+    border: 10px rgba(0, 0, 0, 0.363);
+    border-radius: 6px;
+}
+
+.short{
+    display: flex;
+}
+.short .left{
+
+    padding-right: 50px;
+}
+.short .left input{
+    width: 350px;
+}
+
+
+.short .rigth input{
+    width: 350px;
+}
+#space{
+    margin-top: 50px;
+}
+.form .input hr{
+    width: 100%;
+    height: 1px;
+    background-color: #0000006b;
+    margin: 30px 0 30px 0;
+}
+.form .input h4{
+    font-size: 1.3rem;
+    margin: 0;
+}
+.form .input button{
+    width: 30%;
+    height: 50px;
+    border-radius: 6px;
+    color: #ffffff;
+    background-color: rgb(17, 20, 43);
+    margin-left: 500px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.touch{
+    height: 700px;
+    display: flex;
+}
+.touch h3{
+    font-size: 2rem;
+    margin: 30px 0 50px 0;
+}
+.touch p{
+    margin: 0;
+    text-align: left;
+    width: 70%;
+}
+
+.touch .contact{
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    height: 100%;
+}
+.touch .contact .input{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.touch .contact input{
+    width: 80%;
+    height: 100%;
+    margin: 0;
+    border: 0;
+}
+
+
+.touch .short{
+    display: flex;
+}
+
+.touch .short .rigth{
+    height: 100%;
+}
+.touch .short .left input{
+    width: 300px;
+}
+
+
+.touch .short .rigth input{
+    width: 300px;
+}
+.touch .input input{
+    margin: 0;
+    width: 70%;
+    height: 40px;
+    background-color: rgb(253, 250, 243);
+    border-radius: 6px;
+}
+#message input{
+    height: 200px;
+}
+.touch .info{
+    margin-top: 30px;
+    padding-left: 50px;
+    width: 40%;
+    height: 88%;
+    background-color: rgb(253, 250, 243);
+    border-radius: 6px;
+}
+
+
+.touch .info div .telefonoEmailDireccion{
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.touch .info div .telefonoEmailDireccion div{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+.touch h4{
+    margin: 0;
+}
+.touch .info i{
+    color: rgb(37, 37, 37);
+    font-size: 1rem;
+}
+.touch .info p{
+    color: #9c9c9c;
+}
+
+.touch .info .follow i{
+    font-size: 2rem;
+}
+
+footer{
+    background-color: rgb(253, 250, 243);
+    height: 200px;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #33333350;
+}
+footer .fag{
+    display: flex;
+}
+footer .fag p {
+    margin-left: 50px;
+}
+footer div a i{
+    color: #33333350;
 }
