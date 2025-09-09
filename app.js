@@ -1,24 +1,26 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    const galleryItems = document.querySelectorAll('.gallery-item');
+function filtrar(categoria) {
+  // 1. Obtiene todas las imágenes
+  const imagenes = document.querySelectorAll('.galeria .imagen');
+  
+  // 2. Itera sobre cada imagen
+  imagenes.forEach(imagen => {
+    // Si la categoría es 'todo', muestra todas las imágenes
+    if (categoria === 'todo') {
+      imagen.classList.remove('oculto');
+    } else {
+      // Si la imagen NO tiene la clase de la categoría
+      if (!imagen.classList.contains(categoria)) {
+        // La oculta
+        imagen.classList.add('oculto');
+      } else {
+        // Si SÍ la tiene, la muestra
+        imagen.classList.remove('oculto');
+      }
+    }
+  });
 
-    filterButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            // Elimina la clase 'active' de todos los botones
-            filterButtons.forEach(btn => btn.classList.remove('active'));
-            // Agrega la clase 'active' al botón que se hizo clic
-            button.classList.add('active');
-
-            const category = button.getAttribute('data-category');
-
-            // Oculta todas las galerías
-            galleryItems.forEach(item => item.classList.add('hidden'));
-
-            // Muestra solo la galería de la categoría seleccionada
-            const selectedGallery = document.querySelector(".gallery-item");
-            if (selectedGallery) {
-                selectedGallery.classList.remove('hidden');
-            }
-        });
-    });
-});
+  // 3. Actualiza el botón activo para que se vea seleccionado
+  const botones = document.querySelectorAll('.btn');
+  botones.forEach(btn => btn.classList.remove('active'));
+  document.querySelector(`.btn[onclick="filtrar('${categoria}')"]`).classList.add('active');
+}

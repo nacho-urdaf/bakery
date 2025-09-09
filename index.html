@@ -20,19 +20,17 @@
         </div>
         <div>
             <button>
-                <p>
-                    Crete Your Cake
-                </p>
+                <a href="#quote">Crete Your Cake</a>
             </button>
         </div>
     </nav>
 
     <section class="portafolio">
         <div id="portafolio">
-            <div></div>
+            
             <h1>Crete Your Dream Cake</h1>
             <p>At Art & Cake, we trasform your your vision into edible art. From birthdats to weddings, every cake is a masterpiece</p>
-            <button> View Portafolio</button>
+            <button><a href="#gallery">View Portafolio</a></button>
         </div>
     </section>
 
@@ -95,40 +93,61 @@
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quas ad ex eaque recusandae doloremque facilis eveniet fuga qui asperiores? Tempore rerum quaerat ipsum et voluptates repellat laborum aperiam non?
         </p>
-        <div class="typesOfCake">
-            <a href="">Weddings</a>
-            <a href="">Birthdays</a>
-            <a href="">Special Occasions</a>
-            <a href="">Corporal Events</a>
+        
+        <div class="botones">
+            <button class="btn active" onclick="filtrar('bodas')">Weddings</button>
+            <button class="btn" onclick="filtrar('birthdats')">Birthdats</button>
+            <button class="btn" onclick="filtrar('Special')">Special Occasions</button>
+            <button class="btn" onclick="filtrar('Corporate')">Corporate Events</button>
         </div>
-        <hr>
-        <div class="weddingCakes">
-            <div>
-                <img src="https://plus.unsplash.com/premium_photo-1674498802496-c9a5983ef176?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8d2VkZGluZyUyMGNha2V8ZW58MHx8MHx8fDA%3D" alt="">
-                <h3>Elegant Wedding Cake</h3>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                <p class="Detalles">View Details</p>
-            </div>
-             <div>
-                <img src="https://images.unsplash.com/photo-1525257831700-183b9b8bf5c4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHdlZGRpbmclMjBjYWtlfGVufDB8fDB8fHww" alt="">
-                <h3>Classic Wedding Cake</h3>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                <p class="Detalles">View Details</p>
-            </div>
-             <div>
-                <img src="https://images.unsplash.com/photo-1659401083689-240a4f511a76?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTl8fHdlZGRpbmclMjBjYWtlfGVufDB8fDB8fHww" alt="">
-                <h3>Modern Wedding Cake</h3>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                <p class="Detalles">View Details</p>
-            </div>
-             <div>
-                <img src="https://images.unsplash.com/photo-1582180834946-f3d376b18376?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTV8fHdlZGRpbmclMjBjYWtlfGVufDB8fDB8fHww" alt="">
-                <h3>Rustic Wedding Cake</h3>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                <p class="Detalles">View Details</p>
-            </div>
 
+        <div class="galeria">
+            <div class="imagen bodas">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1503525642560-ecca5e2e49e9?q=80&w=835&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <h3>Rustic Wedding Cake</h3>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <p class="Detalles">View Details</p>
+                </div>
+                <div>
+                    <img src="https://plus.unsplash.com/premium_photo-1674498802496-c9a5983ef176?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <h3>Rustic Wedding Cake</h3>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <p class="Detalles">View Details</p>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1503525642560-ecca5e2e49e9?q=80&w=835&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <h3>Rustic Wedding Cake</h3>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <p class="Detalles">View Details</p>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1519654793190-2e8a4806f1f2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8d2VkZGluZyUyMGNha2V8ZW58MHx8MHx8fDA%3D" alt="">
+                    <h3>Rustic Wedding Cake</h3>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <p class="Detalles">View Details</p>
+                </div>
+            </div>
+            <div class="imagen birthdats">
+             <img src="imagen_boda2.jpg" alt="Boda 1111">
+            </div>
+            <div class="imagen Special">
+                <img src="imagen_boda2.jpg" alt="Boda 2">
+            </div>
+            <div class="imagen Corporate">
+                <img src="imagen_especial1.jpg" alt="Evento especial 1">
+            </div>
         </div>
+
+
+
+
+
+
+
+
+
+
 
     </section>
 
@@ -251,9 +270,9 @@
             <hr>
             <h3>Follow Us</h3>
             <div class="follow">
-                <a href="https://www.instagram.com/artandcake._?fbclid=IwY2xjawMsGt9leHRuA2FlbQIxMABicmlkETFFRzN5a3ZzQmQ1dGN5WnJmAR67egEZ6SFUfJV-H5K1CAEKZioRTctt06db1L0oSYuJH4xWYImNyx89cKpfMQ_aem_89po_03kWmn0IWSfkuEGnw"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.facebook.com/ArtandCakee"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="https://x.com/?lang=es"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/artandcake._?fbclid=IwY2xjawMsGt9leHRuA2FlbQIxMABicmlkETFFRzN5a3ZzQmQ1dGN5WnJmAR67egEZ6SFUfJV-H5K1CAEKZioRTctt06db1L0oSYuJH4xWYImNyx89cKpfMQ_aem_89po_03kWmn0IWSfkuEGnw " target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/ArtandCakee" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://x.com/?lang=es" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
             </div>
         </div>
         
@@ -267,9 +286,9 @@
         </div>
         <div>
             <div>
-                <a href="https://www.instagram.com/artandcake._?fbclid=IwY2xjawMsGt9leHRuA2FlbQIxMABicmlkETFFRzN5a3ZzQmQ1dGN5WnJmAR67egEZ6SFUfJV-H5K1CAEKZioRTctt06db1L0oSYuJH4xWYImNyx89cKpfMQ_aem_89po_03kWmn0IWSfkuEGnw"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.facebook.com/ArtandCakee"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="https://x.com/?lang=es"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/artandcake._?fbclid=IwY2xjawMsGt9leHRuA2FlbQIxMABicmlkETFFRzN5a3ZzQmQ1dGN5WnJmAR67egEZ6SFUfJV-H5K1CAEKZioRTctt06db1L0oSYuJH4xWYImNyx89cKpfMQ_aem_89po_03kWmn0IWSfkuEGnw" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/ArtandCakee" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://x.com/?lang=es" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
             </div>
         </div>
         <div>
@@ -277,6 +296,6 @@
         </div>
     </footer>
 
-    
+    <script src="app.js"></script>
 </body>
 </html>
